@@ -1,0 +1,639 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #000000ed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html {
+
+    background: 
+      radial-gradient(
+        circle at bottom, 
+        rgba(8, 36, 158, 0.137) 0%, 
+        transparent 120%
+      ),
+      aurl('https://i.ibb.co/fCpVTtd/abstract-space-travel-free-video.jpg');
+ 
+  }
+
+.logo {
+  user-select: none;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.logo2 {
+ 
+  font-family: "Press Start 2P", system-ui;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+  body {
+    background: transparent; 
+  
+  }
+  .background::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+ 
+    background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
+    top: -20%;
+    left: -20%;
+    z-index: 0;
+
+  }
+/* Make navbar full width */
+.navthing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background: rgba(15, 15, 15, 0.9); /* Semi-transparent background */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100; /* Keep it above other content */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar content */
+.navpart {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 100px;
+}
+
+.navpart .logo {
+  font-size: 1.5rem;
+  color: rgba(255, 251, 0, 0.836); /* Goldish color */
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+
+
+.button {
+  background-color: #121212;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: 20px;
+  text-decoration: none;
+  align-content: center;
+  border: none;
+  
+ 
+
+}
+.button, .a2 {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover{
+  background-color: #ffe600b6;
+  transition: 1s;
+  transform: scale(1.1);
+  color: #000000;
+
+}
+.a2:hover {
+  color: #000000;
+}
+  @keyframes floatStars {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-10px, 10px); }
+  }
+  
+  .card {
+    z-index: 1;
+    width: 400px;
+    background: #121212;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: 100px;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+   
+   
+  }
+  .languages {
+    background-color: #121212;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 100px;
+
+    
+  }
+  .frameworks {
+    background-color: #121212;
+    height: 150px;
+    border-radius: 10px;
+    margin-top: 100px;
+
+    
+  }
+  .icons img {
+    width: 35px; /* Smaller icon size */
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .icons img:hover {
+    transform: scale(1.2); /* Subtle hover effect */
+    
+  
+  }
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid transparent;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+   
+  }
+  .layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Space between the sections */
+  }
+  
+  .languages, .frameworks {
+    width: 150px; /* Adjust width to keep the sections compact */
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .languages h2, .frameworks h2 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .profile-picture img {
+    width: 107%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card h1 {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    font-size: 0.8rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .contact-btn {
+    display: inline-block;
+    background: #121212;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+  }
+  p span {
+    display: inline-block; 
+    transition: color 0.3s ease; 
+}
+ .html:hover {
+  color: rgba(255, 174, 0, 0.836);
+}
+.css:hover {
+  color: rgb(60, 128, 255);
+}
+.Vue:hover {
+  color: rgba(66, 184, 131);
+}
+.react:hover {
+  color: rgb(4, 198, 247);
+}
+.Boot:hover {
+  color: rgb(142, 51, 239)
+}
+p span:hover {
+    color: rgba(255, 251, 0, 0.836)
+}
+
+  .contact-btn:hover {
+    background: #fbff01;
+    transform: scale(1.1);
+    color: #121212;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons .icon {
+    text-decoration: none;
+    background: #ffffff;
+    color: #121212;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 9px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .social-icons .icon:hover {
+    transform: scale(1.1);
+    background: #fbff01;
+
+  }
+  .footer {
+    position: fixed; /* Keeps the footer at the bottom of the viewport */
+    bottom: -10px; /* Align to the bottom edge */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Make it span the entire width of the screen */
+    background-color: transparent;
+    color: #333; /* Text color */
+    text-align: left; /* Center the text */
+    padding: 0px 0; /* Add some padding for spacing */
+    margin-left: 10px; /*Adjust screen alignment */
+    font-size: 0.9rem; /* Adjust font size */
+    
+  }
+/* General styles for the projects section */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between the project cards */
+  justify-content: center;
+  margin: 30px 0; /* Margin for the section to space it out from other elements */
+  max-width: 95%; /* Limit the width of the projects section */
+  margin: auto;
+  padding-bottom: 50px; /* Add bottom padding to make space for the footer */
+}
+
+.project-card {
+  width: 20%;
+  max-width: 600px;
+  background-color: #121212;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  height: 240px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+
+}
+
+.project-card img {
+  width: 100%; /* Makes image take up 100% of the card's width */
+  height: 200px; /* Fixed height for image */
+  object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+.project-card h3 {
+  color: #fff;
+  font-size: 0.6rem;
+  margin-top: 10px;
+  font-family: 'Press Start 2P', sans-serif;
+
+}
+.project-card a{
+  text-decoration: none;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Make sure nav doesn't overlap */
+body {
+  margin-top: 60px; /* Offset for fixed nav */
+  padding-bottom: 20px; /* Make sure there's enough space at the bottom */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .project-card {
+    width: 45%; /* Two cards per row on medium screens */
+    min-width: 300px; /* Adjust min width for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 90%; /* Full width for each card on small screens */
+    min-width: 280px; /* Slightly smaller on very small screens */
+  }
+}
+@media (min-width:1000px) {
+  body {
+    overflow: hidden;
+  }
+}
+/* Reordering for Mobile Phones */
+@media (max-width: 480px) {
+  .layout {
+      flex-direction: column; /* Stack items vertically */
+  }
+
+  .languages {
+      order: 1; /* Move to the top */
+      width: 40%; /* Full width for smaller screens */
+      margin-bottom: -100px;
+  }
+
+  .card {
+      order: 2; /* Stay in the middle */
+      max-width: 100%; /* Adjust width for mobile */
+      margin: 20px auto;
+      margin-top: 80px;
+      padding: 1px;
+  }
+
+  .frameworks {
+      order: 3; /* Move to the bottom */
+      width: 40%; /* Full width for smaller screens */
+      margin-top: -25px;
+  }
+  .button {
+    display: none;
+  }
+  .navthing {
+    padding: 30px 20px;
+    z-index: 101;
+    
+  }
+}
+/* General Styling for nav-links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Buttons (desktop & mobile styles) */
+.nav-links .button {
+  background: #121212;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 4px;
+  margin-left: -29px;
+  position: relative;
+  bottom: 200px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-links .button:hover {
+  background: #ffe600b6;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Mobile-specific: Hide nav-links by default */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start off-screen */
+    width: 250px;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.5s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Show nav-links when expanded */
+  .nav-links.expanded {
+    right: -50px;
+  }
+
+  /* Hamburger menu is visible only on mobile */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    z-index: 1100;
+    padding-left: 60px;
+  }
+
+  .hamburger-menu i {
+    color: rgba(255, 251, 0, 0.836);
+  }
+
+  .nav-links .button {
+    display: none; /* Hide default buttons initially */
+  }
+
+  .nav-links.expanded .button {
+    display: block; /* Show these buttons when expanded */
+  }
+}
+
+/* Desktop-specific: Always show nav-links */
+@media (min-width: 769px) {
+  .nav-links {
+    position: static; /* Normal flow */
+    flex-direction: row;
+    justify-content: flex-start;
+    background: none;
+    box-shadow: none;
+    height: auto;
+    padding-right: 10px; /* Reset right positioning */
+  }
+
+  .hamburger-menu {
+    display: none; /* Hide hamburger on desktop */
+  }
+}
+/* Adjust for smaller mobile screens like iPhone SE */
+@media (max-width: 375px) {
+  .hamburger-menu i {
+    font-size: 1.6rem; /* Smaller icon on smaller screens */
+  }
+
+  .nav-links {
+    width: 200px; /* Narrower menu for smaller screens */
+    padding: 0 10px; /* Optional: Adds padding to the menu */
+  }
+
+  .nav-links .button {
+    font-size: 0.9rem; /* Slightly smaller font size for buttons */
+    padding: 8px 15px; /* Adjust padding */
+    margin-top: 50px;
+    margin-bottom: -40px; 
+  }
+  .navthing {
+    padding: 30px 20px;
+    z-index: 101;
+}
+.languages {
+  order: 1;
+  width: 40%;
+  margin-bottom: -100px;
+  margin-top: 340px;
+}
+.card {
+  order: 2;
+  max-width: 100%;
+  margin: -150px auto;
+  margin-top: 90px;
+  padding: 10px;
+}
+.frameworks {
+  order: 3;
+  width: 40%;
+  margin-top: 150px;
+ margin-bottom: 50px;
+  position: static;
+}
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+  font-size: 1.8rem;
+  z-index: 1100;
+  padding-left: 50px;
+}
+}
+@media (max-width:344px)
+{
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    z-index: 1100;
+    padding-left: 30px;
+}
+}
+@media (max-width:360px)
+{
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    z-index: 1100;
+    padding-left: 40px;
+}
+}
+.learning-btn {
+  display: inline-block;
+  background: #121212;
+  color: #ffffff;
+  font-weight: bold;
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 10px 10px;
+  cursor: pointer;
+  margin-top: 0px;
+  transition: background 0.3s;
+}
+.learning-btn:hover {
+  background: #fbff01;
+    color: #121212;
+}
+.subjects {
+  width: 1000px;
+  height: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+}
+.icons2 {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+}
+.icons2 img {
+  width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.icons3 {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+
+}
+.icons3 img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: -150px;
+}
+.icons4 {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+
+}
+.icons4 img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: -270px;
+}
+.icons5 {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+
+}
+.icons5 img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: -190px;
+}
+@media (max-width:768px){
+  .learning-btn {
+    display: none;
+  }
+}
